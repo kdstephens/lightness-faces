@@ -20,13 +20,13 @@ Screen('CloseAll'); clear all; clear mex;
 
 %% Constants / Initialization
 wd = cd; %sets experiment's working directory as the current directory
-cd ..; addpath(strcat(cd, '\general-functions')); cd(wd) %add necessary general functions
+cd ..; addpath(strcat(cd, '/general-functions')); cd(wd) %add necessary general functions
 %For subject
-subDataDir = strcat(wd,'\SubData'); 
+subDataDir = strcat(wd,'/SubData'); 
 subID = GetNextSubID(subDataDir, wd); 
 subFilename = strcat(int2str(subID), '.mat');
 %For experiment
-faceDir = strcat(wd,'\stimuli');
+faceDir = strcat(wd,'/stimuli');
 numFaceRepeats = 2; 
 
 
@@ -38,9 +38,9 @@ numFaceRepeats = 2;
  %% Get faces, repeat numFaceRepeats number of times and randomly permute
  % upright faces for odd numbered subjects, inverted faces for even
  if mod(subID,2) %then odd numbered subject
-     faceDir = strcat(faceDir,'\upright');
+     faceDir = strcat(faceDir,'/upright');
  else %even numbered subject
-     faceDir = strcat(faceDir,'\inverted');
+     faceDir = strcat(faceDir,'/inverted');
  end
  [facesRGB, faceNames]  = GetImgs(faceDir, wd, [], '*.png');
  [stimRGB, stimNames] = RepAndPermVects(numFaceRepeats, 1, facesRGB, faceNames); 
