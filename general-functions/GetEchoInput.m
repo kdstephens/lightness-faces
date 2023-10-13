@@ -1,4 +1,4 @@
-function [input, t] = GetEchoInput (win, wd, stimuli, inputType, allowedInputs,...
+function [input, t] = GetEchoInput (win, stimuli, inputType, allowedInputs,...
                                displayMsg, x, y)
 
 % [input, t] = GetEchoInput(win, stimuli, inputType, allowedInputs,...
@@ -60,4 +60,3 @@ while true
 end
 
 t = when.secs;
-cd(wd)

@@ -20,9 +20,9 @@ Screen('CloseAll'); clear all; clear mex;
 
 %% Constants / Initialization
 wd = cd; %sets experiment's working directory as the current directory
+cd ..; addpath(strcat(cd, '\general-functions')); cd(wd) %add necessary general functions
 %For subject
 subDataDir = strcat(wd,'\SubData'); 
-cd ..
 subID = GetNextSubID(subDataDir, wd); 
 subFilename = strcat(int2str(subID), '.mat');
 %For experiment
@@ -42,10 +42,8 @@ numFaceRepeats = 2;
  else %even numbered subject
      faceDir = strcat(faceDir,'\inverted');
  end
- cd ..
  [facesRGB, faceNames]  = GetImgs(faceDir, wd, [], '*.png');
- cd ..
- [stimRGB, stimNames] = RepAndPermVects(numFaceRepeats, 1, wd, facesRGB, faceNames); 
+ [stimRGB, stimNames] = RepAndPermVects(numFaceRepeats, 1, facesRGB, faceNames); 
  numStim = length(stimRGB);
  
  %Initialize subData
@@ -67,7 +65,7 @@ screenNumber = max(Screen('Screens'));
 HideCursor;
 
 %Show instructions
-cd ..; ShowImgUntilKeyPressed(win, wd, 'Instructions.jpg');
+ShowImgUntilKeyPressed(win, 'Instructions.jpg');
 
 %% Getting racial categorizations
 %text constants. faces are assumed 80x100 pixels. 
@@ -84,8 +82,7 @@ for i = 1:numStim
     t0 = Screen('Flip', win);
     
     %Getting racial categorization and reaction time
-    cd ..
-    [input t1] = GetEchoInput(win, wd, stimRGB{i}, 'alpha', {'b' 'w'}, msg, x, y);
+    [input t1] = GetEchoInput(win, stimRGB{i}, 'alpha', {'b' 'w'}, msg, x, y);
     subData{i,3} = t1 - t0; %reaction time
     if strcmp(input,'b') || strcmp(input,'B')
         subData{i,2} = 0; %code black as 0

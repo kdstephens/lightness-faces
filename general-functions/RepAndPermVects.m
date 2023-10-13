@@ -1,6 +1,6 @@
-function varargout = RepAndPermVects(numRepeats, isSameRndOrdr, wd, varargin)
+function varargout = RepAndPermVects(numRepeats, isSameRndOrdr, varargin)
 
-% varargout = RepAndPermVects(numRepeats,isSameRndOrdr,wd,varargin)
+% varargout = RepAndPermVects(numRepeats,isSameRndOrdr,varargin)
 %
 % takes in possibly multiple input vectors (in the cell varargin) copies 
 % each element of each vector numRepeats number of times and then randomly 
@@ -16,5 +16,3 @@ for i = 1:length(varargin)
     end
     varargout{i} = output(rndOrdr);
 end
-
-cd(wd)
