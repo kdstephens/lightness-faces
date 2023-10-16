@@ -92,13 +92,10 @@ win = psychtoolboxStuff.win;
 my = psychtoolboxStuff.my; 
 
 %Show instructions
-% ShowImgUntilKeyPressed(win, 'MLF0_Instructions.jpg'); 
-%NEED TO MAKE
 ShowImgUntilKeyPressed(win,'Instructions.jpg');
 
 %% Getting racial categorizations
 %Text constants
-% subData.questionType = 'Caucasian (y/n)'; 
 msg = 'Does this face look Caucasian or African-American?\n\nType ''c'' for Caucasian and ''a'' for African American\n\nHit return to input your response: ';
 x = 'center'; 
 y = my - 300; 
