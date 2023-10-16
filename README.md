@@ -9,16 +9,22 @@ As part of my PhD dissertation I showed that the effects demonstrated by Levin &
 This repository contains the code I used in for my experiments. All code was written for Matlab's Psychophysics Toolbox (http://psychtoolbox.org/). 
 
 ## Custom Functions
-In addition to the main experiment functions (MAIN_***.m), there are several other custom functions that are helpful when working with Matlab and the Psychophysics toolbox. 
- - GetNexSubID.m -- Gets an ID for the next participant based on the IDs of previous participants, which are stored in a subdirectory. Particpant IDs are simply increasing numbers (i.e., participant 1, 2, 3, etc...).
- - GetImgs.m -- Retreives the names and RGB matrices (necessary for showing the images on screen using Psyctoolbox) for the images in a subdirectory.
- - RePAndPermVects.m -- Takes in possibly multiple input vectors, copies each element of each vector numRepeats number of times and then randomly permutes each vector into a larger vector.
- - ShowImgUntilKeyPressed.m -- Psychtoolbox function that takes in an image filename and displays the the image in the current PsychToolbox window until a key is pressed. 
- - GetEchoInput -- Adapted from the Psychtoolbox function GetEchoString.m. Shows participants an image on a Psychtoolbox window along with a display message and takes inputs from the participants. 
+In addition to the main experiment functions (MAIN_***.m), there are several other custom functions that are helpful when working with Matlab and the Psychophysics toolbox.
+ - GetEchoInput &ndash; Adapted from the Psychtoolbox function GetEchoString.m. Shows participants an image on a Psychtoolbox window along with a display message and takes inputs.  
+ - GetImgs.m &ndash; Retreives the names and RGB matrices (necessary for showing the images on screen using Psyctoolbox) for all images in a subdirectory.
+ - GetNexSubID.m &ndash; Gets an ID for the next participant based on the IDs of previous participants, which are stored in a subdirectory. Particpant IDs are simply increasing numbers (i.e., participant 1, 2, 3, etc...).
+ - MkWhiteNoise.m &ndash; Generates a rectangle of Gaussian white noise to be displayed between each stimulus, i.e. during the interstimulus interval (ISI). 
+ - PsychtoolboxSetup.m &ndash; A script that runs the functions necessary to get Psychtoolbox ready for running an experiment.  
+ - RePAndPermVects.m &ndash; Takes in possibly multiple input vectors, copies each element of each vector numRepeats number of times and then randomly permutes each vector into a larger vector.
+ - ShowImgUntilKeyPressed.m &ndash; Psychtoolbox function that takes in an image filename and displays the the image in the current PsychToolbox window until a key is pressed. 
+
 
  ## Experiments
- ### Experiment 0 (LF0)
+ ### Experiment LF0
  In this experiment, participants view several faces, one and a time, and must judge whether they are racially black or white ('b' for black, 'w' for white). There are only actually 2 different faces &ndash; the prototypical African-American face and the prototypical Caucausian face used in [Levin & Banaji's (2006)](lev2006) original experiment. However, each face has been duplicated several times, with each duplicate made either darker or lighter in luminance than the original. Odd-numbered participants see the faces upright and even-numbered participants see them inverted.
+
+ ### Experiment MLF0
+ Similar to experiment *LF0*, except uses "morphed faces" as stimuli, which are morphs between a Caucasin face and an African-American face. There are two versions of each morph, one wearing the Caucasian hairstyle and one wearing the African-American hairstyle. The goal of this experiment is to create a set of racially ambiguous faces that participants perceive as Caucasian when wearing one hairstyle but as African-American when wearing another hairstyle. See the ReadMe file in /MLF0 for more details. 
 
  ## References
  <a id="baker2016"></a>Baker, L.J., & Levin, D.T. (2016). The face-race lightness illusion is not driven by low-level stimulus properties: An empirical reply to Firestone and Scholl (2014). *Psychonomic Bulletin & Review, 23*, 1989–1995. https://doi.org/10.3758/s13423-016-1048-z

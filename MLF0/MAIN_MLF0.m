@@ -1,14 +1,21 @@
 function MAIN_MLF0
 % MAIN_MLF0
 %{
-Shows subjects several faces and asks them one of two questions: (1) Does 
-this face look Caucasian? Or (2) Does this face look African-American?
 
-In either case, they push 'y' for yes and 'n' for no. Takes the string of 
-y's and n's and codes them as 1's and 0's respectively. Save data is a cell 
-with the face names listed in the first column (in the order presented 
-during the experiment), and the subjects' categorizations (1's and 0's) 
-listed in the second column
+Shows participants several faces, one at a time. For each face participants 
+are asked to categorize it as Caucasian (by pressing “c” on the keyboard) 
+or as African-American (by pressing “a” on the keyboard). Participants are 
+also informed that some of the faces might look ambiguous or multi-racial, but 
+they should choose the race that the face looks most like. After choosing a 
+racial category, participants press the return key to submit their response. 
+Each submission is followed by a 500ms interstimulus interval containing a 
+375 (vertical) by 300 (horizontal) pixel rectangle of Gaussian noise. 
+All faces are shown against a white background at central fixation.
+
+Takes the string of b's and w's and codes them as 0's and 1's respectively. 
+Data is saved as a cell with the face names listed in the first column 
+(in the order presented during the experiment), and the subjects' 
+categorizations (1's and 0's) listed in the second column.
 %}
 
 %% Constants / Initialization
