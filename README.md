@@ -26,6 +26,9 @@ In addition to the main experiment functions (MAIN_***.m), there are several oth
  ### Experiment MLF0
  Similar to experiment *LF0*, except uses "morphed faces" as stimuli, which are morphs between a Caucasin face and an African-American face. There are two versions of each morph, one wearing the Caucasian hairstyle and one wearing the African-American hairstyle. The goal of this experiment is to create a set of racially ambiguous faces that participants perceive as Caucasian when wearing one hairstyle but as African-American when wearing another hairstyle. See the ReadMe file in /MLF0 for more details. 
 
+ ### More to Come
+ I am in the process of uploading ALL of my old experiment code onto GitHub. This is just the beginning. Because I want to double-check all of the code (make sure it works, is properly commented, etc.), the process is slow-going. If this project interests you, check back in a couple of days as there will likely be more code uploaded. 
+
  ## References
  <a id="baker2016"></a>Baker, L.J., & Levin, D.T. (2016). The face-race lightness illusion is not driven by low-level stimulus properties: An empirical reply to Firestone and Scholl (2014). *Psychonomic Bulletin & Review, 23*, 1989–1995. https://doi.org/10.3758/s13423-016-1048-z
  
