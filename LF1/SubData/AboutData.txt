@@ -1,0 +1,8 @@
+This Data was taken from SSL 467 & 469
+
+The Folders correspond to the 8 computers in room 467 and the 4 computers in room 469. 
+
+Room 467: Standing in the doorway, facing the room, computers 1-8 are clockwise from left to right. 
+Room 469: Facing the computers, computers 9-12 are numbered from left to right.
+
+Odd-numbered subjects had adjustable patch on the left side of the screen, even subjects had it on the right. 
