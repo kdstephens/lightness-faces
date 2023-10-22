@@ -2,7 +2,7 @@ function MAIN_LF1
 % MAIN_LF1
 %{
 This experiment is a replication/extension of Experiment 1 in
-Levin&Banaji.JEPG.2006 (see p. 504 for their description of the
+Levin&Banaji, 2006 (see p. 504 for their description of the
 experimental procedure).
 
 On each trial the experiment shows subjects two faces, one labeled the
