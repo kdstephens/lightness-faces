@@ -21,10 +21,15 @@ In addition to the main experiment functions (MAIN_***.m), there are several oth
 
  ## Experiments
  ### Experiment LF0
- In this experiment, participants view several faces, one and a time, and must judge whether they are racially black or white ('b' for black, 'w' for white). There are only actually 2 different faces &ndash; the prototypical African-American face and the prototypical Caucausian face used in [Levin & Banaji's (2006)](lev2006) original experiment. However, each face has been duplicated several times, with each duplicate made either darker or lighter in luminance than the original. Odd-numbered participants see the faces upright and even-numbered participants see them inverted.
+ In this experiment, participants view several faces, one and a time, and must judge whether they are racially Black or White ('b' for Black, 'w' for White). There are only actually 2 different faces &ndash; the prototypical African-American face and the prototypical Caucausian face used in [Levin & Banaji's (2006)](lev2006) original experiment. However, each face has been duplicated several times, with each duplicate made either darker or lighter in luminance than the original. Odd-numbered participants see the faces upright and even-numbered participants see them inverted.
 
  ### Experiment MLF0
  Similar to experiment *LF0*, except uses "morphed faces" as stimuli, which are morphs between a Caucasin face and an African-American face. There are two versions of each morph, one wearing the Caucasian hairstyle and one wearing the African-American hairstyle. The goal of this experiment is to create a set of racially ambiguous faces that participants perceive as Caucasian when wearing one hairstyle but as African-American when wearing another hairstyle. See the ReadMe file in /MLF0 for more details. 
+
+ ### Experiment LF1
+ In this experiment, participants view two faces at a time and attempt to match their perceived lightness. This is a replication/extension of Experiment 1 in [Levin & Banaji (2006)](lev2006). (see p. 504 for their description of the experimental procedure). Thus the face stimuli come directly from Levin & Banaji. They consist of three faces &ndash; one pre-rated as racially Black, one pre-rated as racially White, and one pre-rated as racially Ambiguous (i.e., when asked, half of participants rate it as Black and the other half as White). 
+
+ On each trial the experiment participants view two faces, one labeled the "reference face" and one labeled the "adjustable face." The participants' task is to manipulate the adjustable face so that its "shading" matches that of the reference face as closely as possible. Adjustments are made using the up-arrow key and down-arrow key. Hitting either key once exchanges the current adjustable face with the same face that is either 5 grey-levels lighter or 5 grey-levels darker. 
 
  ### More to Come
  I am in the process of uploading ALL of my old experiment code onto GitHub. This is just the beginning. Because I want to double-check all of the code (make sure it works, is properly commented, etc.), the process is slow-going. If this project interests you, check back in a couple of days as there will likely be more code uploaded. 
